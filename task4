@@ -1,0 +1,35 @@
+/*Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+2, 3, 7 -> 7
+44 5 78 -> 78
+22 3 9 -> 22*/
+
+// Решение
+
+Console.Clear();
+Console.Write("Введите число 1: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число 2: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число 3: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
+int numTotal = 0;
+if (num1 < num2)
+{
+    numTotal = num2;
+}
+else if (num1 > num2)
+{
+    numTotal = num1;
+}
+if (numTotal < num3)
+{
+    Console.WriteLine($"Число {num3} больше остальных");
+}
+else if (numTotal > num3)
+{
+    Console.WriteLine($"Число {numTotal} больше остальных");
+}
+else
+{
+    Console.WriteLine($"Число {num1} больше остальных");
+}
